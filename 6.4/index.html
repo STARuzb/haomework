@@ -1,0 +1,92 @@
+<!-- 1 -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>qizil rang</title>
+</head> 
+<body>
+    <p id="text">JavaScript Exercises</p> 
+    <div>
+        <button id="jsstyle" onclick="qizilrang()">Style</button>
+    </div>
+
+<script>
+    function qizilrang() {
+        let paragraph = document.getElementById('text');
+        paragraph.style.color = 'red';
+    }
+</script>
+</body>
+</html>
+ -->
+
+
+
+
+<!-- 2 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ismfamiliya</title>
+</head> 
+<body>
+  <label for="firstName">Ism:</label>
+  <input type="text" id="firstName">
+  <br>
+  <label for="lastName">Familiya:</label>
+  <input type="text" id="lastName">
+  <br>
+  <button onclick="userobj()">Submit</button>
+
+  <script>
+    function userobj() {
+      let firstName = document.getElementById('firstName').value;
+      let lastName = document.getElementById('lastName').value;
+      let user = {
+        name: firstName,
+        lastname: lastName
+      };
+      console.log(user);
+    }
+  </script>
+</body>
+</html> -->
+
+
+
+<!-- 4 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random raqam</title>
+  <style>
+    body {
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="generateRandomNumber()">Random Son</button>
+  <p id="randomNumber"></p>
+
+  <script>
+    function generateRandomNumber() {
+      let randomNumber = Math.floor(Math.random() * 1000) + 1; 
+      let resultElement = document.getElementById('randomNumber');
+
+      resultElement.textContent = 'Tasodifiy Son: ' + randomNumber;
+
+      if (randomNumber % 2 === 0) {
+        resultElement.style.color = 'red'; 
+      } else {
+        resultElement.style.color = 'blue'; 
+      }
+    }
+  </script>
+</body>
+</html>
